@@ -57,5 +57,5 @@ class Solution:
     def roman_to_int(self) -> int:
         integer = 0
         #TODO define list (dictionary?) of roman values
-        #TODO realise main logic: find biggest number and deduct thigs from left add things on the right
+        #TODO realise main logic: find biggest number and deduct things from left add things on the right
         return integer

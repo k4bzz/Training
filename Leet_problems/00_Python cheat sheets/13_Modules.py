@@ -46,3 +46,40 @@ print(four_decimal_points)
 
 four_decimal_points = Decimal('0.53') * Decimal('20.65')
 print(four_decimal_points)
+
+# IMPORTING FROM FILES
+"""
+same as with func/modules
+
+File 1 - fileone.py
+def always_three():
+    return 3
+
+File 2 - filetwo.py
+from fileone import always_three
+
+always_three()    
+"""
+
+# DATETIME
+from datetime import datetime
+
+birthday = datetime(1994, 2, 15, 4, 25, 12)
+print(birthday)
+print(birthday.year)
+print(birthday.weekday())  # what day in a week that was
+
+print(datetime.now())
+
+print((datetime(2018, 1, 1) - datetime(2017, 1, 1)))
+
+# STRPTIME -> datetime from a string
+date = "Jan 15, 2011"
+
+parsed_date = datetime.strptime(date,"%b %d, %Y")  # second argument is format into which to produce. Arguments are in python docs
+print(parsed_date.month)
+
+# STRFTIME -> string from a datetime
+date_string = datetime.strftime(datetime.now(), "%b %d, %Y")
+print(date_string)
+
