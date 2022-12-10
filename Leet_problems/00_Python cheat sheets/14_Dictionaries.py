@@ -160,7 +160,7 @@ for company, value in biggest_brands.items():
     print(f"KEY: {company} VALUE: {value}")
     # print(company + " has a value of " + str(value) + " billion dollars. ")
 
-# EXERCISE
+# EXERCISE CA
 tarot = { 1:	"The Magician", 2:	"The High Priestess", 3:	"The Empress", 4:	"The Emperor",
           5:	"The Hierophant", 6:	"The Lovers", 7:	"The Chariot", 8:	"Strength", 9:	"The Hermit",
           10:	"Wheel of Fortune", 11:	"Justice", 12:	"The Hanged Man", 13:	"Death", 14:	"Temperance",
