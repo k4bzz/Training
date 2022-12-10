@@ -50,12 +50,15 @@ Constraints:
     It is guaranteed that s is a valid roman numeral in the range [1, 3999].
 """
 
+
 class Solution:
     def __init__(self, s: str):
         self.s = s
 
     def roman_to_int(self) -> int:
+        romans = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
         integer = 0
-        #TODO define list (dictionary?) of roman values
-        #TODO realise main logic: find biggest number and deduct things from left add things on the right
+        # TODO define list (dictionary?) of roman values
+        # TODO get input string as user input
+        # TODO realise main logic: find biggest number and deduct things from left add things on the right
         return integer
