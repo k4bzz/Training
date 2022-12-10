@@ -8,7 +8,6 @@ wrong_tries = []
 
 # Generate the secret number
 secret = random.randint(start, end)
-# print(f"random {secret}")
 
 
 # Check the input

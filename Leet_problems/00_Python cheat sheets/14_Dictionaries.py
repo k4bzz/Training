@@ -116,6 +116,10 @@ print(raffle)
 raffle.pop(412123, "No prize")
 print(raffle)
 
+#ADD VALUE TO EXISTING KEY
+# def play_word(curr_player: str, new_word: str) -> None:
+#     player_to_words[curr_player].append(new_word)
+
 # EXAMPLE
 available_items = {"health potion": 10, "cake of the cure": 5, "green elixir": 20,
                    "strength sandwich": 25, "stamina grains": 15, "power stew": 30}
