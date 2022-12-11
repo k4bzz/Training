@@ -28,6 +28,13 @@ sensors = {"living room": 21, "kitchen": 23, "bedroom": 20}
 sensors.update({"pantry": 22, "guest room": 25, "patio": 34})
 print(sensors)
 
+# COPY DICT
+dict1 = {"test": 1, "test2": 2}
+dict2 = dict(dict1)
+dict2 = dict1.copy()
+# dict2 = dict1  # will create reference to the same object in the memory
+
+
 # OVERWRITE VALUES
 menu = {"oatmeal": 3, "avocado toast": 6, "carrot juice": 5, "blueberry muffin": 2}
 menu["oatmeal"] = 5
