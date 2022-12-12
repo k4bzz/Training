@@ -1,18 +1,16 @@
 import random
 
-# Define shit
-start = 1
-end = 100
-score = 1000
-wrong_tries = []
+# Define constants
+START = 1
+END = 100
+SCORE = 1000
 
 # Generate the secret number
-secret = random.randint(start, end)
+secret = random.randint(START, END)
 
 
 # Check the input
 def check_user_input(limit_start, limit_end):
-
     clean_value = None
     check_pass = False
     limit = list(range(limit_start, limit_end+1))
@@ -31,7 +29,9 @@ def check_user_input(limit_start, limit_end):
 
 
 run = 1
-checked_value = check_user_input(start, end)
+wrong_tries = []
+
+checked_value = check_user_input(START, END)
 
 # Compare numbers
 while checked_value != secret:
@@ -41,13 +41,13 @@ while checked_value != secret:
         print(f"Lower")
     elif checked_value < secret:
         print(f"Higher")
-    score = score - 10
+    SCORE = SCORE - 10
     run += 1
 
-    checked_value = check_user_input(start, end)
+    checked_value = check_user_input(START, END)
 
 print(f"""
-You won punk! Your score is: {score}
+You won punk! Your score is: {SCORE}
 It took you only {run} tries!
 You tried these numbers {wrong_tries}
 """)

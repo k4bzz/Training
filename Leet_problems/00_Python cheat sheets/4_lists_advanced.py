@@ -46,7 +46,7 @@ print(list(my_range2))
 my_range3 = range(1, 100, 10)
 print(list(my_range3))
 
-#  length
+# length
 my_list = [1, 2, 3, 4, 5]
 print(len(my_list))
 

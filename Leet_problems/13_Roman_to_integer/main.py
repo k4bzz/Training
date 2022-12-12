@@ -55,10 +55,54 @@ class Solution:
     def __init__(self, s: str):
         self.s = s
 
+    # TODO get input string as user input
     def roman_to_int(self) -> int:
         romans = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
         integer = 0
-        # TODO define list (dictionary?) of roman values
-        # TODO get input string as user input
-        # TODO realise main logic: find biggest number and deduct things from left add things on the right
+
+        if len(self.s) == 1:
+            integer += romans[self.s[0]]
+            print(f"simple IF --- Roman 0 {romans[self.s[0]]} --- Sum {integer}")
+        elif len(self.s) > 1:
+            for index in range(len(self.s) - 2):
+                print(f"LOOP INDEX {index}")
+                if romans[self.s[index]] < romans[self.s[index + 1]]:  # IX
+                    integer += romans[self.s[index + 1]] - romans[self.s[index]]
+                    print(f" x < y --- Index {index} --- Roman I {romans[self.s[index]]} --- "
+                          f"Roman I + 1 {romans[self.s[index + 1]]} --- Sum {integer}")
+                elif romans[self.s[index-1]] >= romans[self.s[index]] >= romans[self.s[index + 1]]:  # XII, XVI
+                    integer += romans[self.s[index]]
+                    print(f" x > y --- Index {index} --- Roman I {romans[self.s[index]]} ---"
+                          f" Sum {integer}")
+                elif romans[self.s[index-1]] < romans[self.s[index]] > romans[self.s[index+1]]:  # XLI
+                    print(f"a < x < y --- pass")
+
+            if romans[self.s[-2]] < romans[self.s[-1]]:
+                integer += romans[self.s[-1]] - romans[self.s[-2]]
+                print(f"LAST TWO -2 < -1 --- Roman -2 {romans[self.s[-2]]} --- Roman -1 {romans[self.s[-1]]} --- Sum {integer}")
+            else:
+                integer += romans[self.s[-2]] + romans[self.s[-1]]
+                print(f"LAST TWO ELSE --- Roman -2 {romans[self.s[-2]]} --- Roman -1 {romans[self.s[-1]]} --- Sum {integer}")
         return integer
+
+test = Solution("LVIII")
+print(test.roman_to_int())
+
+# Example 1:
+# Input: s = "III"
+# Output: 3
+# Explanation: III = 3.
+#
+# Example 2:
+# Input: s = "LVIII"
+# Output: 58
+# Explanation: L = 50, V= 5, III = 3.
+#
+# Example 3:
+# Input: s = "MCMXCIV"
+# Output: 1994
+# Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
+#
+# Example 4
+# Input: s = "XLIX"
+# Output: 49
