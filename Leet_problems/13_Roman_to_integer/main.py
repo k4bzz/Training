@@ -70,12 +70,16 @@ class Solution:
                     integer += romans[self.s[index + 1]] - romans[self.s[index]]
                     print(f" x < y --- Index {index} --- Roman I {romans[self.s[index]]} --- "
                           f"Roman I + 1 {romans[self.s[index + 1]]} --- Sum {integer}")
+                if romans[self.s[index]] >= romans[self.s[index + 1]]:  # IX
+                    integer += romans[self.s[index]]
+                    print(f" x < y --- Index {index} --- Roman I {romans[self.s[index]]} --- "
+                          f"Roman I + 1 {romans[self.s[index + 1]]} --- Sum {integer}")
                 elif romans[self.s[index-1]] >= romans[self.s[index]] >= romans[self.s[index + 1]]:  # XII, XVI
                     integer += romans[self.s[index]]
                     print(f" x > y --- Index {index} --- Roman I {romans[self.s[index]]} ---"
                           f" Sum {integer}")
-                elif romans[self.s[index-1]] < romans[self.s[index]] > romans[self.s[index+1]]:  # XLI
-                    print(f"a < x < y --- pass")
+                elif romans[self.s[index-1]] < romans[self.s[index]] >= romans[self.s[index+1]]:  # XLI
+                    print(f"a < x >= y --- pass {romans[self.s[index-1]]}")
 
             if romans[self.s[-2]] < romans[self.s[-1]]:
                 integer += romans[self.s[-1]] - romans[self.s[-2]]
@@ -85,8 +89,14 @@ class Solution:
                 print(f"LAST TWO ELSE --- Roman -2 {romans[self.s[-2]]} --- Roman -1 {romans[self.s[-1]]} --- Sum {integer}")
         return integer
 
-test = Solution("LVIII")
+test = Solution("XLIX")
 print(test.roman_to_int())
+
+# 123 1<2<3 ?
+# 321 3>2>1 +=
+# 111 1=1=1 +=
+# 121 1<2>=2 none
+
 
 # Example 1:
 # Input: s = "III"
