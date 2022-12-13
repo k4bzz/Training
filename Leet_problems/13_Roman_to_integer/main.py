@@ -59,37 +59,55 @@ class Solution:
     def roman_to_int(self) -> int:
         romans = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
         integer = 0
+        previous_char = ""
 
-        if len(self.s) == 1:
-            integer += romans[self.s[0]]
-            print(f"simple IF --- Roman 0 {romans[self.s[0]]} --- Sum {integer}")
-        elif len(self.s) > 1:
-            for index in range(len(self.s) - 2):
-                print(f"LOOP INDEX {index}")
-                if romans[self.s[index]] < romans[self.s[index + 1]]:  # IX
-                    integer += romans[self.s[index + 1]] - romans[self.s[index]]
-                    print(f" x < y --- Index {index} --- Roman I {romans[self.s[index]]} --- "
-                          f"Roman I + 1 {romans[self.s[index + 1]]} --- Sum {integer}")
-                if romans[self.s[index]] >= romans[self.s[index + 1]]:  # IX
-                    integer += romans[self.s[index]]
-                    print(f" x < y --- Index {index} --- Roman I {romans[self.s[index]]} --- "
-                          f"Roman I + 1 {romans[self.s[index + 1]]} --- Sum {integer}")
-                elif romans[self.s[index-1]] >= romans[self.s[index]] >= romans[self.s[index + 1]]:  # XII, XVI
-                    integer += romans[self.s[index]]
-                    print(f" x > y --- Index {index} --- Roman I {romans[self.s[index]]} ---"
-                          f" Sum {integer}")
-                elif romans[self.s[index-1]] < romans[self.s[index]] >= romans[self.s[index+1]]:  # XLI
-                    print(f"a < x >= y --- pass {romans[self.s[index-1]]}")
-
-            if romans[self.s[-2]] < romans[self.s[-1]]:
-                integer += romans[self.s[-1]] - romans[self.s[-2]]
-                print(f"LAST TWO -2 < -1 --- Roman -2 {romans[self.s[-2]]} --- Roman -1 {romans[self.s[-1]]} --- Sum {integer}")
+        for letter in self.s:
+            print((f"ROMAN {letter}"))
+            print(f"Prev char before = {previous_char}")
+            if romans.get(previous_char, 0) < romans.get(letter, 0):
+                print(f"{romans.get(previous_char, 0)} < {romans.get(letter, 0)}")
+                integer += romans.get(letter, 0) - romans.get(previous_char, 0)
+                print(f"{integer} = {romans.get(letter, 0)} - {romans.get(previous_char, 0)}")
+            # elif romans.get(previous_char, 0) > romans.get(letter, 0):
+            #     print(f"{romans.get(previous_char, 0)} < {romans.get(letter, 0)}")
+            #     integer += romans.get(letter, 0) - romans.get(previous_char, 0)
+            #     print(f"{integer} = {romans.get(letter, 0)} - {romans.get(previous_char, 0)}")
             else:
-                integer += romans[self.s[-2]] + romans[self.s[-1]]
-                print(f"LAST TWO ELSE --- Roman -2 {romans[self.s[-2]]} --- Roman -1 {romans[self.s[-1]]} --- Sum {integer}")
+                integer += romans.get(letter, 0)
+                print(f"{integer} += {romans.get(letter, 0)}")
+            previous_char = letter
+            print(f"Prev char after = {previous_char}")
+
+        # if len(self.s) == 1:
+        #     integer += romans[self.s[0]]
+        #     print(f"simple IF --- Roman 0 {romans[self.s[0]]} --- Sum {integer}")
+        # elif len(self.s) > 1:
+        #     for index in range(len(self.s) - 2):
+        #         print(f"LOOP INDEX {index}")
+        #         if romans[self.s[index]] < romans[self.s[index + 1]]:  # IX
+        #             integer += romans[self.s[index + 1]] - romans[self.s[index]]
+        #             print(f" x < y --- Index {index} --- Roman I {romans[self.s[index]]} --- "
+        #                   f"Roman I + 1 {romans[self.s[index + 1]]} --- Sum {integer}")
+        #         if romans[self.s[index]] >= romans[self.s[index + 1]]:  # IX
+        #             integer += romans[self.s[index]]
+        #             print(f" x < y --- Index {index} --- Roman I {romans[self.s[index]]} --- "
+        #                   f"Roman I + 1 {romans[self.s[index + 1]]} --- Sum {integer}")
+        #         elif romans[self.s[index-1]] >= romans[self.s[index]] >= romans[self.s[index + 1]]:  # XII, XVI
+        #             integer += romans[self.s[index]]
+        #             print(f" x > y --- Index {index} --- Roman I {romans[self.s[index]]} ---"
+        #                   f" Sum {integer}")
+        #         elif romans[self.s[index-1]] < romans[self.s[index]] >= romans[self.s[index+1]]:  # XLI
+        #             print(f"a < x >= y --- pass {romans[self.s[index-1]]}")
+        #
+        #     if romans[self.s[-2]] < romans[self.s[-1]]:
+        #         integer += romans[self.s[-1]] - romans[self.s[-2]]
+        #         print(f"LAST TWO -2 < -1 --- Roman -2 {romans[self.s[-2]]} --- Roman -1 {romans[self.s[-1]]} --- Sum {integer}")
+        #     else:
+        #         integer += romans[self.s[-2]] + romans[self.s[-1]]
+        #         print(f"LAST TWO ELSE --- Roman -2 {romans[self.s[-2]]} --- Roman -1 {romans[self.s[-1]]} --- Sum {integer}")
         return integer
 
-test = Solution("XLIX")
+test = Solution("XIX")
 print(test.roman_to_int())
 
 # 123 1<2<3 ?
