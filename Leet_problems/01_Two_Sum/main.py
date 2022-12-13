@@ -52,3 +52,16 @@ test = Solution([2, 11, 7, 3], 9)
 
 # Call the method two_sum on test instance
 print(test.two_sum())
+
+"""
+Leet code example
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        numMap = dict()
+        for i in range(len(nums)):
+            complement = target - nums[i]
+            if complement in numMap:
+                return [numMap[complement], i]
+            numMap[nums[i]] = i
+
+"""

@@ -46,3 +46,15 @@ print(f"test1 ({test1.x}) - {test1.is_palindrome()}\n"
       f"test4 ({test4.x}) - {test4.is_palindrome()}\n"
       f"test5 ({test5.x}) - {test5.is_palindrome()}\n"
       f"test6 ({test6.x}) - {test6.is_palindrome()}\n")
+
+"""
+Leet code solution
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        z = str(x)
+        y = list(str(x))
+        y.reverse()
+        y1 = "".join(y)
+        return(bool(z==y1))
+
+"""
