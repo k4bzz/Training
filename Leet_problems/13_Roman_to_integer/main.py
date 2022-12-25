@@ -69,6 +69,7 @@ class Solution:
             previous_char = letter
         return print(integer)
 
+
 test1 = Solution()
 test1.roman_to_int()
 
