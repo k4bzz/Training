@@ -58,16 +58,16 @@ class Solution:
     def roman_to_int(self) -> None:
         self.rmn = input("Enter roman number blyat: ")
         romans = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
-        integer = 0
+        total = 0
         previous_char = ""
 
         for i, letter in enumerate(self.rmn):
             if romans.get(previous_char, 0) < romans.get(letter, 0):
-                integer += romans.get(letter, 0) - (2*romans.get(previous_char, 0))
+                total += romans.get(letter, 0) - (2*romans.get(previous_char, 0))
             else:
-                integer += romans.get(letter, 0)
+                total += romans.get(letter, 0)
             previous_char = letter
-        return print(integer)
+        return print(total)
 
 
 test1 = Solution()
