@@ -19,6 +19,7 @@ Explanation: Reads 01 from right to left. Therefore, it is not a palindrome.
 """
 import random
 
+
 class Solution:
     def __init__(self, x: int):
         self.x = x
@@ -28,10 +29,11 @@ class Solution:
             return False
         else:
             str_x = str(self.x)
-            #TODO Could you solve it without converting the integer to a string?
-            if str_x[::] == str_x[::-1]:
+            # TODO Could you solve it without converting the integer to a string?
+            if str_x == str_x[::-1]:
                 return True
         return False
+
 
 test1 = Solution(-121)
 test2 = Solution(0)
