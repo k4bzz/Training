@@ -38,11 +38,10 @@ with open("new.txt", "w") as file1:  # W is for writing
     file1.write("121212Sasaj J11OPU 2! ¬!\"£$%^&*()_+")  # REWRITES THE ENTIRE FILE IF EXISTS OR CREATES A NEW ONE!
 
 # Append to a file
-# TODO research why it is not appending on a new line
 with open("new.txt", "a") as file1:  # A - append mode
-    file1.write("2APPENDED TEXT2")  # Appends to end of file with no spacing?? In CA it starts from a new line...
+    file1.write("\n2APPENDED TEXT3")  # Appends to end of file with no spacing. Added \n to start from a new line
 
-# Read CSV file as dicionary
+# Read CSV file as dictionary
 import csv
 
 list_of_email_addresses = []
