@@ -41,3 +41,27 @@ with open("new.txt", "w") as file1:  # W is for writing
 # TODO research why it is not appending on a new line
 with open("new.txt", "a") as file1:  # A - append mode
     file1.write("2APPENDED TEXT2")  # Appends to end of file with no spacing?? In CA it starts from a new line...
+
+# Read CSV file as dicionary
+import csv
+
+list_of_email_addresses = []
+with open('test.csv', newline='') as users_csv:
+    """
+    We pass the additional keyword argument newline='' to the file opening open() function 
+    so that we don’t accidentally mistake a line break in one of our data fields as a new 
+    row in our CSV (https://docs.python.org/3/library/csv.html#id3).
+    """
+    user_reader = csv.DictReader(users_csv)
+    for row in user_reader:
+        list_of_email_addresses.append(row['Email'])
+    print(list_of_email_addresses)
+
+# Different delimiters
+import csv
+
+# TODO newline='' doesnt read file correctly if it hase \n or just new line -> see test2.csv
+with open('test2.csv', newline='') as addresses_csv:
+    address_reader = csv.DictReader(addresses_csv, delimiter=';')
+    for row in address_reader:
+        print(row['Address'])
