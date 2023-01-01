@@ -180,7 +180,7 @@ print("Punk's") #double quotes good
 #prints execution time
 import time
 start_time = time.time()
-main()          #code here
+# main()          #code here
 print("--- %s seconds ---" % (time.time() - start_time))
 
 
@@ -272,7 +272,6 @@ my_beard_description = poem_description("1974", "Shel Silverstein", "My Beard", 
 
 print(my_beard_description)
 
-
 # Project
 highlighted_poems = "Afterimages:Audre Lorde:1997,  The Shadow:William Carlos Williams:1915, Ecstasy:Gabriela Mistral:1925,   Georgia Dusk:Jean Toomer:1923,   Parting Before Daybreak:An Qi:2014, The Untold Want:Walt Whitman:1871, Mr. Grumpledump's Song:Shel Silverstein:2004, Angel Sound Mexico City:Carmen Boullosa:2013, In Love:Kamala Suraiyya:1965, Dream Variations:Langston Hughes:1994, Dreamwood:Adrienne Rich:1987"
 print(highlighted_poems)
@@ -306,3 +305,23 @@ for details in highlighted_poems_details:
 # Assemble complex string
 for i in range(len(titles)):
     print("The poem \"{}\" was published by {} in {}.".format(titles[i], poets[i], dates[i]))
+
+# r RAW formatting to fix escape characters
+slash_null_sig = r"""
+ _  _     ___   __  ____             
+/ )( \   / __) /  \(_  _)            
+) \/ (  ( (_ \(  O ) )(              
+\____/   \___/ \__/ (__)             
+ _  _   __    ___  __ _  ____  ____  
+/ )( \ / _\  / __)(  / )(  __)(    \ 
+) __ (/    \( (__  )  (  ) _)  ) D ( 
+\_)(_/\_/\_/ \___)(__\_)(____)(____/ 
+        ____  __     __   ____  _  _ 
+ ___   / ___)(  )   / _\ / ___)/ )( \
+(___)  \___ \/ (_/\/    \\___ \) __ (
+       (____/\____/\_/\_/(____/\_)(_/
+ __ _  _  _  __    __                
+(  ( \/ )( \(  )  (  )               
+/    /) \/ (/ (_/\/ (_/\             
+\_)__)\____/\____/\____/
+"""

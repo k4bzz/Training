@@ -85,3 +85,25 @@ with open("output.csv", newline='') as fileX:
     output_writer2 = csv.DictReader(fileX)
     for row in output_writer2:
         print(row)
+
+# JSON
+import json
+
+with open('test3.json') as purchase_json:
+    purchase_data = json.load(purchase_json)
+
+print(purchase_data['user']) # Prints 'ellen_greg'
+
+# Writing into JSON
+
+turn_to_json = {
+  'eventId': 674189,
+  'dateTime': '2015-02-12T09:23:17.511Z',
+  'chocolate': 'Semi-sweet Dark',
+  'isTomatoAFruit': True
+}
+
+import json
+
+with open('output.json', 'w') as json_file:
+    json.dump(turn_to_json, json_file)
