@@ -198,3 +198,9 @@ for requested_topping in requested_toppings:
 		print(f"Sorry, we dont have {requested_topping}.")
 
 print("\nFinished!")
+
+# Built in count method that returns number of occurrences in the list
+fruits = ['apple', 'banana', 'cherry', 'cherry']
+
+x = fruits.count("cherry")
+print(x) # 2

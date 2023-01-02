@@ -64,3 +64,47 @@ teaching_table_area = circle.area(36/2)
 round_room_area = circle.area(11460/2)
 
 print(round_room_area)
+
+
+# Getting attributes
+class NoCustomAttributes:
+    pass
+
+
+attributeless = NoCustomAttributes()
+
+try:
+    attributeless.fake_attribute
+except AttributeError:
+    print("This text gets printed!") # prints "This text gets printed!"
+
+# hasattr returns true/false if attribute exists
+hasattr(attributeless, "fake_attribute") # returns False
+
+# returns actual value of the attribute
+getattr(attributeless, "other_fake_attribute", 800) # returns 800, the default value
+
+# Example
+class Student:
+    def __init__(self, name, year):
+        self.name = name
+        self.year = year
+        self.grades = []
+
+    def add_grade(self, grade):
+        if type(grade) is Grade:
+            self.grades.append(grade)
+
+roger = Student("Roger van der Weyden", 10)
+sandro = Student("Sandro Botticelli", 12)
+pieter = Student("Pieter Bruegel the Elder", 8)
+
+
+class Grade:
+    minimum_passing = 65
+
+    def __init__(self, score):
+        self.score = score
+
+p_grade = Grade(100)
+pieter.add_grade(p_grade)

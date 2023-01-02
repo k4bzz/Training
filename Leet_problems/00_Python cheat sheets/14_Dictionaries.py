@@ -67,6 +67,13 @@ heights = [61, 70, 67, 64]
 students = {key: value for key, value in zip(names, heights)}
 print(students)
 
+# UnZip
+pairs = [(1, 'a'), (2, 'b'), (3, 'c'), (4, 'd')]
+numbers, letters = zip(*pairs)
+print(numbers)
+print(letters)
+
+
 # DICT EXAMPLE
 songs = ["Like a Rolling Stone", "Satisfaction", "Imagine", "What's Going On", "Respect", "Good Vibrations"]
 playcounts = [78, 29, 44, 21, 89, 5]
