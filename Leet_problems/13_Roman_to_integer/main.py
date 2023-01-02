@@ -52,7 +52,7 @@ Constraints:
 
 
 class Solution:
-    def __init__(self):  # Seems to work with no input parameers
+    def __init__(self):  # Seems to work with no input parameters
         pass
 
     def roman_to_int(self) -> None:
