@@ -18,7 +18,7 @@ fruit_sentence = "My favorite fruit is " + favorite_fruit
 
 print(fruit_sentence)  # with spaces
 
-#  LEN
+# LEN
 favorite_fruit = "blueberry"
 length = len(favorite_fruit)
 print(length)
@@ -248,7 +248,7 @@ with_underscores = with_spaces.replace(' ', '_') # replace WHAT with WHAT
 print(with_underscores)
 # 'You_got_the_kind_of_loving_that_can_be_so_smooth'
 
-#FIND
+# FIND
 print('smooth'.find('t'))
 # => '4'            # returns -1 is NOT FOUND
 
