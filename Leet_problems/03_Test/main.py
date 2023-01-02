@@ -61,8 +61,8 @@ def main():
 
     stats = pstats.Stats(pr)
     stats.sort_stats(pstats.SortKey.TIME)
-    stats.print_stats()
-    # stats.dump_stats(filename='needs_profiling.prof')
+    # stats.print_stats()
+    stats.dump_stats(filename='needs_profiling.prof')
 
 
 if __name__ == '__main__':

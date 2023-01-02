@@ -204,3 +204,7 @@ fruits = ['apple', 'banana', 'cherry', 'cherry']
 
 x = fruits.count("cherry")
 print(x) # 2
+
+# Prints every other letter
+s = "1234567890"
+print(s[::2])

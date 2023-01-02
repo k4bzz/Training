@@ -193,3 +193,13 @@ spread["future"] = tarot.pop(10, 0)
 
 for key, value in spread.items():
     print(f"Your {key} is the {value} card.")
+
+# Get the key of max value
+def max_key(my_dictionary):
+    largest_key = float("-inf") # -inf lowest possible value
+    largest_value = float("-inf")
+    for key, value in my_dictionary.items():
+        if value > largest_value:
+            largest_value = value
+            largest_key = key
+    return largest_key
