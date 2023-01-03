@@ -47,4 +47,4 @@ def unique_values(my_dictionary: dict) -> int:
 print(unique_values({0: 3, 1:1, 4:1, 5:3}))
 print(unique_values({0:1, 1:3, 4:3, 5:3}))
 
-# print(dir(list))
+# print(dir(list)) lax pidr
