@@ -19,7 +19,7 @@ def word_length_dictionary(words):
         word_lengths[word] = len(word)
     return word_lengths
 """
-
+dict = {1:1,2:3}
 
 # Creates a dictionary with frequency of words in the list
 def frequency_dictionary(words: list) -> dict:
@@ -45,6 +45,6 @@ def unique_values(my_dictionary: dict) -> int:
 
 
 print(unique_values({0: 3, 1:1, 4:1, 5:3}))
-print(unique_values({0:3, 1:3, 4:3, 5:3}))
+print(unique_values({0:1, 1:3, 4:3, 5:3}))
 
 # print(dir(list))
