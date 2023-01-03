@@ -95,7 +95,7 @@ building_heights = {"Burj Khalifa": 828, "Shanghai Tower": 632, "Abraj Al Bait":
 
 print(building_heights["Burj Khalifa"])  # get VALUE by KEY
 
-# KEY THAT DOESNT EXIST
+# KEY THAT DOESN'T EXIST
 # print(building_heights["Landmark 81"])  # will throw the KeyError
 
 key_to_check = "Landmark 81"
