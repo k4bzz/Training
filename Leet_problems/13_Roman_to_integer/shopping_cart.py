@@ -6,3 +6,6 @@ class ShoppingCart:
 
     def add(self, item: str) -> None:
         pass
+
+print("huj")
+asd = {1:1}
