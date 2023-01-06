@@ -49,14 +49,17 @@ Constraints:
     s contains only the characters ('I', 'V', 'X', 'L', 'C', 'D', 'M').
     It is guaranteed that s is a valid roman numeral in the range [1, 3999].
 """
+# TODO add pytest tests
 
 
-class Solution:
-    def __init__(self):  # Seems to work with no input parameters
-        pass
-
-    def roman_to_int(self) -> None:
+class RomaToInteger:
+    def __init__(self):
         self.rmn = input("Enter roman number blyat: ")
+
+    def __repr__(self):
+        return f"This is __repr__: Number entered is: {self.rmn}" # works when you do print(test1)
+
+    def roman_to_int(self) -> int:
         romans = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
         total = 0
         previous_char = ""
@@ -67,11 +70,11 @@ class Solution:
             else:
                 total += romans.get(letter, 0)
             previous_char = letter
-        return print(total)
+        return total
 
 
-test1 = Solution()
-test1.roman_to_int()
+test1 = RomaToInteger()
+print(test1.roman_to_int())
 
 """
 Leet code solution
