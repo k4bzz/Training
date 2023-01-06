@@ -9,3 +9,4 @@ class ShoppingCart:
 
 print("huj")
 asd = {1:1}
+print("dfkljsdf")
