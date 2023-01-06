@@ -4,6 +4,7 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/Leet_problems/13_Roman_to_integer/.pytest_cache/v" />
       <excludeFolder url="file://$MODULE_DIR$/Leet_problems/14_Longest_prefix" />
+      <excludePattern pattern="$MODULE_DIR$/Leet_problems/14_Longest_prefix/main.py" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.11 (Training)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
