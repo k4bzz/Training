@@ -14,4 +14,5 @@ Explanation: There is no common prefix among the input strings.
 """
 # gitignore test - first test failed
 # excluded from sources - from banner - didnt work
-# added to exclusion in structure
+# added to exclusion in structure - nope
+# adding /path to gitignore
