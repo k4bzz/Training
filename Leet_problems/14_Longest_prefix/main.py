@@ -13,3 +13,4 @@ Output: ""
 Explanation: There is no common prefix among the input strings.
 """
 # gitignore test - first test failed
+# excluded from sources
