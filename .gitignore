@@ -3,3 +3,5 @@
 /Leet_problems/97_Leet_Challenges/14_Longest_prefix/.gitignore
 /Leet_problems/97_Leet_Challenges/09_Palindrome_number/.pytest_cache/CACHEDIR.TAG
 /Leet_problems/97_Leet_Challenges/09_Palindrome_number/.pytest_cache/README.md
+/venv/Lib/site-packages/pip/_vendor/packaging/__about__.py
+/venv/*
