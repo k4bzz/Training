@@ -1,0 +1,17 @@
+To understand this gotcha, we must first establish what Python classifies as mutable.
+A mutable object refers to various containers in Python that are intended to be changed.
+A list for example has append and remove operations that change the elements of the list.
+Sets and dictionaries are also two other mutable objects in Python as they can be changed on the fly.
+
+Mutable:
+-list
+-Set
+-Dictionary
+
+Immutable:
+-String
+-Tuple
+-Bool
+-int
+-float
+-frozenset

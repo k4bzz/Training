@@ -156,8 +156,10 @@ print(type(message))
 print(type(age))
 
 fav_num = 8
+num_value = 123.123123
 print(f"My favourite number is {fav_num}")
 print(f"My favourite number is {fav_num=}") # prints My favourite number is fav_num = 8
+print(f"Formatting float to 2 decimal places {num_value:.2f}")
 
 # PRINT WITH INTENDATIONS OR WHITESPACES
 print("\tLAX")
