@@ -10,6 +10,27 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Leet_problems/00_Python cheat sheets/test.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Leet_problems/00_Python cheat sheets/test2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Leet_problems/99_CA_projects/new_password.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Leet_problems/99_CA_projects/passwords.csv">
           <value>
             <Attribute>

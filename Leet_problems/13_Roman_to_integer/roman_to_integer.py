@@ -73,8 +73,8 @@ class RomanNum:
         return total
 
 
-test1 = RomanNum()
-print(test1.convert_roman_to_int())
+# test1 = RomanNum()
+# print(test1.convert_roman_to_int())
 
 """
 Leet code solution

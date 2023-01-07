@@ -2,6 +2,15 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems/00_Python cheat sheets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems/01_Two_Sum" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems/03_Test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems/04_OOP" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems/09_Palindrome_number" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems/13_Roman_to_integer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems/98_CA_Challenges" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems/99_CA_projects" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Leet_problems/13_Roman_to_integer/.pytest_cache/v" />
       <excludeFolder url="file://$MODULE_DIR$/Leet_problems/14_Longest_prefix" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />

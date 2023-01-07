@@ -20,7 +20,7 @@ Explanation: Reads 01 from right to left. Therefore, it is not a palindrome.
 import random
 
 
-class Solution:
+class Number:
     def __init__(self, x: int):
         self.x = x
 
@@ -35,12 +35,12 @@ class Solution:
         return False
 
 
-test1 = Solution(-121)
-test2 = Solution(0)
-test3 = Solution(10)
-test4 = Solution(121)
-test5 = Solution(1001)
-test6 = Solution(random.randint(-100, 1000000))
+test1 = Number(-121)
+test2 = Number(0)
+test3 = Number(10)
+test4 = Number(121)
+test5 = Number(1001)
+test6 = Number(random.randint(-100, 1000000))
 
 print(f"test1 ({test1.x}) - {test1.is_palindrome()}\n"
       f"test2 ({test2.x}) - {test2.is_palindrome()}\n"
@@ -58,5 +58,4 @@ class Solution:
         y.reverse()
         y1 = "".join(y)
         return(bool(z==y1))
-
 """
