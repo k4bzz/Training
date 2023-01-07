@@ -157,7 +157,7 @@ print(type(age))
 
 fav_num = 8
 print(f"My favourite number is {fav_num}")
-
+print(f"My favourite number is {fav_num=}") # prints My favourite number is fav_num = 8
 
 # PRINT WITH INTENDATIONS OR WHITESPACES
 print("\tLAX")

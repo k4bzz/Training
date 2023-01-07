@@ -61,7 +61,6 @@ def manually_calling_close_on_a_file(filename):
         f.write("hello!\n")
     # close automatic, even if exception
 
-# TODO what is that?
 def finally_instead_of_context_manager(host, port):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     try:
@@ -75,7 +74,6 @@ def finally_instead_of_context_manager(host, port):
         s.connect((host, port))
         s.sendall(b'Hello, world')
 
-# TODO what is that?
 def bare_except():
     while True:
         try:
@@ -94,7 +92,6 @@ def bare_except():
             print("Not a number, try again")
 
 
-# TODO what is that?
 def caret_and_exponentiation(x, p):
     y = x ^ p  # bitwise xor of x and p, not exponentiation
     y = x ** p

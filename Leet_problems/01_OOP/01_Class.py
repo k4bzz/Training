@@ -2,11 +2,13 @@
 https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-classes/cheatsheet
 """
 
+
 # Classes
 
 # Define Class
 class Facade:
-  pass
+    pass
+
 
 # Instantiate the instance of a class (object)
 facade_1 = Facade()
@@ -34,7 +36,7 @@ class Dog:
 
 
 pipi_pitbull = Dog()
-pipi_pitbull.time_explanation() # Prints "Dogs experience 7 years for every 1 human year."
+pipi_pitbull.time_explanation()  # Prints "Dogs experience 7 years for every 1 human year."
 
 
 # Methods with arguments
@@ -47,7 +49,7 @@ class DistanceConverter:
 
 converter = DistanceConverter()
 kms_in_5_miles = converter.how_many_kms(5)
-print(kms_in_5_miles) # prints "8.045"
+print(kms_in_5_miles)  # prints "8.045"
 
 
 # Simple example
@@ -58,10 +60,11 @@ class Circle:
     def area(self, radius):
         return Circle.pi * radius ** 2
 
+
 circle = Circle()
-pizza_area = circle.area(12/2)
-teaching_table_area = circle.area(36/2)
-round_room_area = circle.area(11460/2)
+pizza_area = circle.area(12 / 2)
+teaching_table_area = circle.area(36 / 2)
+round_room_area = circle.area(11460 / 2)
 
 print(round_room_area)
 
@@ -76,13 +79,14 @@ attributeless = NoCustomAttributes()
 try:
     attributeless.fake_attribute
 except AttributeError:
-    print("This text gets printed!") # prints "This text gets printed!"
+    print("This text gets printed!")  # prints "This text gets printed!"
 
 # hasattr returns true/false if attribute exists
-hasattr(attributeless, "fake_attribute") # returns False
+hasattr(attributeless, "fake_attribute")  # returns False
 
 # returns actual value of the attribute
-getattr(attributeless, "other_fake_attribute", 800) # returns 800, the default value
+getattr(attributeless, "other_fake_attribute", 800)  # returns 800, the default value
+
 
 # Example
 class Student:
@@ -95,6 +99,7 @@ class Student:
         if type(grade) is Grade:
             self.grades.append(grade)
 
+
 roger = Student("Roger van der Weyden", 10)
 sandro = Student("Sandro Botticelli", 12)
 pieter = Student("Pieter Bruegel the Elder", 8)
@@ -105,6 +110,7 @@ class Grade:
 
     def __init__(self, score):
         self.score = score
+
 
 p_grade = Grade(100)
 pieter.add_grade(p_grade)

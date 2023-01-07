@@ -11,9 +11,20 @@
       <sourceFolder url="file://$MODULE_DIR$/Leet_problems/97_Leet_Challenges/13_Roman_to_integer" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Leet_problems/98_CA_Challenges" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Leet_problems/99_CA_projects" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems/00_Python cheat sheets/01_General" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems/00_Python cheat sheets/02_Lists" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems/00_Python cheat sheets/03_Loops" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems/00_Python cheat sheets/04_Functions" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems/00_Python cheat sheets/05_Try_Except_Raise" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems/00_Python cheat sheets/06_Strings" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems/00_Python cheat sheets/07_Tuples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems/00_Python cheat sheets/08_Files" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems/00_Python cheat sheets/09_Modules" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems/00_Python cheat sheets/10_Dictionaries" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leet_problems/97_Leet_Challenges" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
       <excludeFolder url="file://$MODULE_DIR$/Leet_problems/97_Leet_Challenges/13_Roman_to_integer/.pytest_cache/v" />
       <excludeFolder url="file://$MODULE_DIR$/Leet_problems/97_Leet_Challenges/14_Longest_prefix" />
-      <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.11" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
