@@ -17,7 +17,6 @@ Input: x = 10
 Output: false
 Explanation: Reads 01 from right to left. Therefore, it is not a palindrome.
 """
-import random
 
 
 class Number:
@@ -34,20 +33,6 @@ class Number:
                 return True
         return False
 
-
-test1 = Number(-121)
-test2 = Number(0)
-test3 = Number(10)
-test4 = Number(121)
-test5 = Number(1001)
-test6 = Number(random.randint(-100, 1000000))
-
-print(f"test1 ({test1.x}) - {test1.is_palindrome()}\n"
-      f"test2 ({test2.x}) - {test2.is_palindrome()}\n"
-      f"test3 ({test3.x}) - {test3.is_palindrome()}\n"
-      f"test4 ({test4.x}) - {test4.is_palindrome()}\n"
-      f"test5 ({test5.x}) - {test5.is_palindrome()}\n"
-      f"test6 ({test6.x}) - {test6.is_palindrome()}\n")
 
 """
 Leet code solution

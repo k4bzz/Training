@@ -26,6 +26,3 @@ def test_not_a_number():
     test5 = Number("www")
     with pytest.raises(TypeError):
         test5.is_palindrome()
-
-def test_random():
-    test6 = Number("www")
